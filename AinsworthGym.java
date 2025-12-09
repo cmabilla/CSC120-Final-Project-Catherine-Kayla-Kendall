@@ -41,8 +41,8 @@ public class AinsworthGym extends Building {
     private void exploreLockerRoom(Player player, Scanner input) {
         System.out.println("You walk towards the door of the locker room.");
         System.out.println("You hear something in the distance");
-        System.out.println("You push the door open and squint, you see a dark shadow-y figure like at the end of hallway");
-        System.out.println("\nDo you: ");
+        System.out.println("\nYou push the door open and squint, you see a dark shadow-y figure like at the end of hallway");
+        System.out.println("Do you: ");
         System.out.println("a) Quietly sneak past this figure and make your way toward the glowing red sign that says 'EXIT'");
         System.out.println("b) Push down a metal locker door to try and draw attention from you to the sound, distracting the dark shadowy figure");
         
@@ -204,7 +204,7 @@ public class AinsworthGym extends Building {
                     System.out.println("One hand slips and you're hanging by one hand, burning. (-15 health) ");
                     player.changeHealth(-15);
                     System.out.println("\nYou somehow regain your footing and you see an upper-level exit door. You escape through there.");
-                    System.out.println("\nYou're hand aches and you decide to go to Tyler to get some suppliers");
+                    System.out.println("\nYou're hand aches and you decide to go to Tyler to get some supplies");
 
                 } else if (num.equals("2")) {
                     System.out.println("You climb very carefully, not making a sound");
