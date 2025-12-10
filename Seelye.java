@@ -150,6 +150,8 @@ public class Seelye extends Building {
                 String destination = input.nextLine();
                 if(destination == "Tyler"){
                     System.out.println("You head over to Tyler for more supplies.");
+                    Tyler tyler = new Tyler();
+                    tyler.play(player, input); 
                 } else if (destination == "Art Museum"){
                     System.out.println("You head to the Art Musuem, the last obstacle between you and safety.");
                 }

@@ -12,22 +12,27 @@ public class SCMA extends Building {
         System.out.println("You have no time to stall as a HORDE of Zombies start chasing you");
         System.out.println("You grab your friends hand and you run");
         System.out.println("As you run, you realize the only way to escape to safety is through");
-        System.out.println("Do you go back to Tyler for supplies or do you fight your way through the Zombies? (1 for Tyler 2 for Challenges");
+        System.out.println("Do you go back to Tyler for supplies or do you fight your way through the Zombies?");
+        System.out.print("(\n1 for Tyler; 2 to fight)");
 
         String choice = input.nextLine();
         switch (choice){
             case "1" -> {
-                //Tyler();
-            }
+            Tyler tyler = new Tyler();
+            tyler.play(player, input);  //
+            System.out.println("After checking Tyler, you make your way back to Smith College Museum of Art...\n");
+            play(player, input);        // back to SCMA menu
+            return;
+        }
             case "2" -> {
                 playChallenges(player, input);
             }
         }
 
     }
- private void playChallenges(Player player, Scanner input) {
+    private void playChallenges(Player player, Scanner input) {
     System.out.println("\nYou have decided to fight");
-    System.out.println("Your first challenge is  ");
- }
+    System.out.println("Your first challenge is");
+}
 
 }
