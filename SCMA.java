@@ -18,8 +18,8 @@ public class SCMA extends Building {
         String choice = input.nextLine();
         switch (choice){
             case "1" -> {
-            Tyler tyler = new Tyler();
-            tyler.play(player, input);  //
+            //Tyler tyler = new Tyler();
+            //tyler.play(player, input);  //
             System.out.println("After checking Tyler, you make your way back to Smith College Museum of Art...\n");
             play(player, input);        // back to SCMA menu
             return;
@@ -32,7 +32,30 @@ public class SCMA extends Building {
     }
     private void playChallenges(Player player, Scanner input) {
     System.out.println("\nYou have decided to fight");
-    System.out.println("Your first challenge is");
+    artChallenge1(player, input);
 }
 
+private void artChallenge2(Player player, Scanner input) {
+    System.out.println("Your second challenge is to unscramble this word:");
+    System.out.println("\nuvseriv");
+
+    String correctAnswer = "survive";
+
+    System.out.print("Your answer: ");
+    String answer = input.nextLine();
+
+    if (answer.equalsIgnoreCase(correctAnswer)) {
+        System.out.println("Correct! You've defeated this batch of zombies and make your way to the next challenge!");
+        artChallenge3(player, input);
+    } else {
+        System.out.println("Incorrect, the zombie attacks (-100 Health)");
+        player.changeHealth(-100);
+        System.out.println("\nENDING: You get eaten by zombies");
+    }
 }
+
+private void artChallenge3(Player player, Scanner input){
+}}
+
+
+

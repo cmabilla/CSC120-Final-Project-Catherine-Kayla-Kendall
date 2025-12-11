@@ -34,9 +34,8 @@ public class Seelye extends Building {
             case "3" -> exploreSpinelli(player, input);
             case "4" -> {
             System.out.println("You decide to return to Tyler to grab more supplies.");
-
-            Tyler tyler = new Tyler();
-            tyler.play(player, input);  //
+            //Tyler tyler = new Tyler();
+            //tyler.play(player, input);  //
             System.out.println("After checking Tyler, you make your way back to Seelye...\n");
             play(player, input);        // back to Seelye menu
             return;
