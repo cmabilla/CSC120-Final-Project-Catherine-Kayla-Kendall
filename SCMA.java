@@ -101,7 +101,7 @@ private void artChallenge2(Player player, Scanner input) {
 
     String choice = input.nextLine();
 
-    if (choice == "127 255"){
+    if (choice.equals( "127 255")){
         System.out.println("You have beat the game! You and your Smithie survivor made it to the John M. Green Hall PVTA bus stop.");
         System.out.println("The national guard picked the two of you up from Smith campus and took you to safety.");
     } else {
